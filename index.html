@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Instalación eléctrica</title>
+	<link rel="stylesheet" type="text/css" href="styles/rancho.css">
+	<script type="text/javascript" src="app/plano.js"></script>
+	<script type="text/javascript" src="app/electricidad.js"></script>
+</head>
+<body>
+<h1>Instalación eléctrica</h1>
+<svg id="canvas" width="1200" height="800">
+	<style>
+		.perimetro-exterior {
+			stroke: black;
+			fill: none;
+		}
+		line {
+			stroke: black;
+		}
+
+		.escalera {
+			stroke: black;
+			fill: none;
+		}
+
+		.caja-hexagonal {
+			stroke: black;
+			fill: blue;	
+		}
+
+		.corrugado {
+			stroke: yellow;
+			fill: yellow;
+			stroke-width: 3;
+		}
+
+		.corrugado-red {
+			stroke: black;
+			fill: black;
+			stroke-width: 4;
+		}
+	</style>
+</svg>
+<script type="text/javascript">
+	var svg = document.getElementById('canvas');
+	dibujarPlano(svg);
+	dibujarPlanoElectrico(svg);
+</script>
+</body>
+</html>
